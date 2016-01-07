@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+     <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+  {%block header%}
+    {% include 'c-navigation.html' %}
+  {% endblock header%}
+
+	{% block content %}
+    <p class="placeholdertext">Dit is de content placeholder, zo zie je dat je hier nog niets voor in de plaats gezet hebt</p>
+  {% endblock content %}
+
+  {% block sidebar %}
+    <p class="placeholdertext">Dit is de sidebar placeholder, zo zie je dat je hier nog niets voor in de plaats gezet hebt</p>
+  {% endblock sidebar %}
+
+  {% block footer %}
+    <p class="placeholdertext">Dit is de Footer placeholder, zo zie je dat je hier nog niets voor in de plaats gezet hebt</p>
+  {% endblock footer%}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src=" {% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/prototype.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+	{% include 'c-carousel.html' %}	
+	{% include 'c-alert.html' %}
+	<div class="container">
+		
+		
+	
+		<div class="row">
+			<div class="col-sm-6">
+				{% include 'c-loginform.html' %}
+			</div>	
+			<div class="col-sm-6">
+				{% include 'c-medialist.html' %}
+			</div>	
+			<div class="col-sm-12">
+				{% include 'c-pillbar.html' %}
+			</div>	
+		</div>
+
+	</div>
+
+{% endblock content %}
+
+
+
+
+
+Alles buiten de blokken blijft uit de HTML dus deze tekst komt nergens terug!
+
+

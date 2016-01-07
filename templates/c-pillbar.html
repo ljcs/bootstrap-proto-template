@@ -1,0 +1,33 @@
+<!-- Dit is een tabbaar dingetje waar je doorheen kunt tabben. 
+Wil je hier meer over weten check dan deze uitleg: http://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp
+
+
+Wat belangrijk is dat je iedere tab een id geeft en dat je deze gebruikt in de Href van de link!
+
+
+-->
+<div class="c-pillbar">
+	<ul class="nav nav-pills">
+	  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+	  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+	  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+	</ul>
+
+	<div class="tab-content">
+	  <div id="home" class="tab-pane fade in active">
+	    <h3>HOME</h3>
+	    <p>Dit is een tabbar je kunt hier heel veel mee, klik op de tabs hiernaast om te zien wat!</p>
+	    <p>Geniet!</p>
+	    <img src="{% static 'images/placeholder4-3.svg' %}">
+	  </div>
+	  <div id="menu1" class="tab-pane fade">
+	    <h3>Menu 1</h3>
+	    {% include 'c-loginform.html' %}
+	  </div>
+	  <div id="menu2" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    {% include 'c-medialist.html' %}
+	    <!-- Je kunt ook componenten in componenten gebruiken -->
+	  </div>
+	</div>
+</div>
